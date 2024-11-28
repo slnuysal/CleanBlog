@@ -12,6 +12,10 @@
   "author": "Selin Uysal",
   "license": "ISC",
   "devDependencies": {
+    "nodemon": "^3.1.7",
     "prettier": "3.4.1"
+  },
+  "dependencies": {
+    "express": "^4.21.1"
   }
 }

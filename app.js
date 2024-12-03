@@ -24,6 +24,14 @@ app.get('/', async (req, res) => {
     posts,
   });
 });
+
+app.get('/posts/:id', async (req, res) => {
+  //console.log(req.params.id);
+  const posts = await Post.findById(req.params.id);
+  res.render('post', {
+    posts,
+  });
+});
 app.get('/about', (req, res) => {
   //res.sendFile(path.resolve(__dirname, 'temp/index.html'));
   res.render('about');
